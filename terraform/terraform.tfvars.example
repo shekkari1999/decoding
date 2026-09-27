@@ -1,0 +1,12 @@
+# Select the same AWS region used for the current experiment.
+aws_region = "us-east-1"
+# Use a zone where AWS currently offers g7e.12xlarge.
+availability_zone = "us-east-1b"
+# Keep the two-GPU G7e instance size.
+instance_type = "g7e.12xlarge"
+# Use the key pair whose private half is in ~/Downloads/aws-key-pair.pem.
+key_pair_name = "aws-key-pair"
+# Replace this documentation-only address with your current public IPv4 plus /32.
+ssh_cidr = "203.0.113.10/32"
+# Allocate a 300 GiB persistent root EBS disk.
+root_volume_size_gib = 300

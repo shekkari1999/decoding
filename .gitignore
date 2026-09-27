@@ -3,3 +3,17 @@
 models/
 __pycache__/
 *.pyc
+# Ignore Terraform's downloaded provider plugins and module cache.
+.terraform/
+# Ignore Terraform state because it contains live cloud resource details.
+*.tfstate
+# Ignore Terraform state backups for the same reason.
+*.tfstate.*
+# Ignore local variable files because they may contain machine-specific values.
+*.tfvars
+# Keep the example variable file even though real variable files are ignored.
+!*.tfvars.example
+# Ignore saved Terraform plan files.
+*.tfplan
+# Ignore Terraform crash reports.
+crash.log
